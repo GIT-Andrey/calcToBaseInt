@@ -1,0 +1,90 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  background: #2c3e50;
+  overflow: hidden;
+}
+
+.buttonsWrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 90px 90px 90px 90px;
+      grid-template-rows: 90px 90px 90px 90px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  width: calc(100% - 20px);
+  height: 390px;
+  padding: 10px;
+}
+
+.buttonsWrap .button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1abc9c), to(#16a085));
+  background: linear-gradient(#1abc9c, #16a085);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 28px;
+}
+
+.buttonsWrap .button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.buttonsWrap .goRez {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9b59b6), to(#8e44ad));
+  background: linear-gradient(#9b59b6, #8e44ad);
+}
+
+.rezult {
+  margin: 10px 10px 0 10px;
+  border: 10px solid #1abc9c;
+  border-bottom: none;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  color: white;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.rezult:active {
+  background: #1abc9c;
+}
+
+.rezult .mainRezult, .rezult .st {
+  font-size: 26px;
+}
+
+.rezult .topRezult {
+  font-size: 16px;
+  margin-top: -10px;
+  margin-left: 2px;
+}
+
+.rezult .cross {
+  font-size: 26px;
+  margin: 0 3px 0 3px;
+}
+
+.allWrap {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
