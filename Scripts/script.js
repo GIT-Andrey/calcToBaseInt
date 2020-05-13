@@ -73,7 +73,7 @@ function btnClicked(arg, del = false) {
                         end = '';
                     }
                     topRez = inputVal.length - 1;
-                    $(".mainRezult").text(inputVal[0] + '.' + inputVal.substr(1) + end);
+                    $(".mainRezult").text(inputVal[0] + '.' + inputVal.substr(1).replace(/0+$/, '') + end);
                     $(".cross").text('×');
                     $(".st").text('10');
                     $(".topRezult").text(topRez);
@@ -89,7 +89,7 @@ function btnClicked(arg, del = false) {
                     if (inputVal == '') {
                         $(".mainRezult").text(end[0]);
                     } else {
-                        $(".mainRezult").text(end[0] + '.' + inputVal);
+                        $(".mainRezult").text(end[0] + '.' + inputVal.replace(/0+$/, ''));
                     }            
                     
                     $(".cross").text('×');
